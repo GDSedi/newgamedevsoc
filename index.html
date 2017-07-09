@@ -12,22 +12,78 @@
   		font-weight: lighter;
   	}
 
+    .headerimg {
+      max-width: 900px;
+      margin: auto;
+      display: block;
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+
   	.maincontain {
   		background-color: white;
-  		max-width: 800px;
+  		max-width: 600px;
   		margin: auto;
+      margin-top: 50px;
   		text-align: center;
+      padding: 20px;
+      color: #163c52;
   	}
 
   	p {
-  		font-size: 24px;
+  		font-size: 18px;
   	}
+
+    .card {
+      background-color: #163c52;
+      color: white;
+      padding: 10px;
+      margin: 20px;
+    }
+
+    .press {
+      margin: 20px;
+      padding: 20px;
+      display: block;
+      background: white;
+      border: 4px solid #163c52;
+      font-size: 20px;
+      -webkit-transition: background-color 500ms ease-out;
+      -moz-transition: background-color 500ms ease-out;
+      -o-transition: background-color 500ms ease-out;
+      transition: background-color 500ms ease-out;
+    }
+
+    a {
+      text-decoration: none;
+      color: #163c52;
+    }
+
+    .press:hover {
+      background-color: #3B97D3;
+      -webkit-transition: background-color 500ms ease-out;
+      -moz-transition: background-color 500ms ease-out;
+      -o-transition: background-color 500ms ease-out;
+      transition: background-color 500ms ease-out;
+    }
 
   </style>
 </head>
 <body>
+  <img src="logotext.png" alt="gamedevsoc logo" class="headerimg">
 	<div class="maincontain">
-		<p>Hello world!</p>
+    <h2>Edinburgh Uni's Game Development Society</h2>
+    <p>We want to create a welcoming environment for seasoned game developers and beginners alike. We host events that are part-talks part-socials, during which you can share your ideas in a stimulating environment.</p>
+    <p>All our events are free, open to non-students and do not require membership, so do come along if you are curious!</p>
+    <div class ="card"> 
+		  <h3>Next event:</h3>
+      <p>This one</p>
+    </div>
+  </div>
+  <div class="maincontain">
+    <a href="https://www.facebook.com/groups/gamedevsocedi/"><span class="press">Join our Facebook group</span></a>
+    <a href="http://space.us14.list-manage2.com/subscribe?u=fef88d16b9f97a5f9fd333b48&id=28e0e8416e"><span class="press">Sign up to our newsletter</span></a>
+    <a href="https://www.eusa.ed.ac.uk/societies/society/gamedevsoc/"><span class="press">Donate??????</span></a>
 	</div>
 </body>
 </html>
