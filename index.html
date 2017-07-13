@@ -8,7 +8,7 @@
 
     html {
       background-color: #3B97D3;
-      font-family:"Letter Gothic Std", sans-serif; 
+      font-family:"Letter Gothic Std", sans-serif;
       font-weight: lighter;
     }
 
@@ -25,9 +25,16 @@
       max-width: 600px;
       margin: auto;
       margin-top: 50px;
-      text-align: center;
-      padding: 20px;
+      padding: 40px;
       color: #163c52;
+    }
+
+    .align-center {
+        text-align: center;
+    }
+
+    .align-left {
+        text-align: left;
     }
 
     p {
@@ -67,23 +74,106 @@
       transition: background-color 500ms ease-out;
     }
 
+    .leftheader {
+        font-size: 36px;
+        color: #3B97D3;
+    }
+
+    img {
+        max-width: 400px;
+    }
+
+    .final {
+        margin-bottom: 60px;
+    }
+
   </style>
 </head>
 <body>
   <img src="logotext.png" alt="gamedevsoc logo" class="headerimg">
-  <div class="maincontain">
+
+  <div class="maincontain align-center">
     <h2>Edinburgh Uni's Game Development Society</h2>
     <p>We want to create a welcoming environment for seasoned game developers and beginners alike. We host events that are part-talks part-socials, during which you can share your ideas in a stimulating environment.</p>
     <p>All our events are free, open to non-students and do not require membership, so do come along if you are curious!</p>
-    <div class="card"> 
+    <div class="card">
       <h3>Next event:</h3>
       <p>This one</p>
     </div>
   </div>
-  <div class="maincontain">
+
+  <div class="maincontain align-center">
     <a href="https://www.facebook.com/groups/gamedevsocedi/"><span class="press">Join our Facebook group</span></a>
     <a href="http://space.us14.list-manage2.com/subscribe?u=fef88d16b9f97a5f9fd333b48&id=28e0e8416e"><span class="press">Sign up to our newsletter</span></a>
-    <a href="https://www.eusa.ed.ac.uk/societies/society/gamedevsoc/"><span class="press">Donate??????</span></a>
+    <a href="https://www.eusa.ed.ac.uk/societies/society/gamedevsoc/"><span class="press">Donate?????? EUSA???</span></a>
+    <p>You can also email us at <a href="mailto:gamedevsoc@gmail.com">gamedevsoc@gmail.com</a>.</p>
   </div>
+
+  <div class="maincontain align-center">
+    <h2 class="leftheader">Our events</h2>
+    <h3>SOCIALS: MICROTALKS, WORKSHOPS &amp; SHOWCASE</h3>
+    <h3>MONTHLY ON SATURDAYS</h3>
+    <p>Talk to people about games, come by if you are just curious, listen (or give!) short talks, learn about gamedev and play or receive feedback on your games. Non-members and non-students welcome!</p>
+    <h3>GAMEJAMS</h3>
+    <h3>ONE PER SEMESTER</h3>
+    <p>Challenge yourself and make a game in a day or two! It's a great way to get started and improve your skills.</p>
+  </div>
+
+  <div class="maincontain align-center">
+    <h2 class="leftheader">Past events</h2>
+    <h3>You can find games people made at our gamejams on our <a class="blue" href="https://gamedevsoc.itch.io">itch.io page</a>!</h3>
+    <h3>JAM SANDWICH</h3>
+    <h3>25.02.17 - 25.02.17</h3>
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/?listType=playlist&list=PLhR_KR4_8GfchWqQSrWigR0qcdtWpy9H1"></iframe>
+        </div>
+    <h3>CHILLJAM</h3>
+    <h3>12.11.16</h3>
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/WHHMHY8LX0Y"></iframe>
+        </div>
+  </div>
+
+  <div class="maincontain align-left">
+        <h2 class="leftheader">Resources for starting out</h2>
+        <h3>TOOLS</h3>
+        <p><a href="http://twinery.org/">Twine</a> - easy-to-use tool for interactive fiction creation. Quick tutorial over <a href="http://www.auntiepixelante.com/twine/">here</a>!</p>
+        <p><a href="https://www.scirra.com/construct2">Construct 2</a> - programming-free game creation (Windows). Intuitive and great for prototyping</p>
+        <p><a href="http://www.yoyogames.com/gamemaker">GameMaker</a> - powerful, has its own built-in language. Exports to many platforms</p>
+        <p><a href="http://www.sortingh.at/">sortingh.at</a> - not sure what tool to use?</p>
+        <p><a href="https://itch.io/">itch.io</a> - discover &amp; host your games for free</p>
+        <p><a href="http://www.indiegamejams.com/">Indie Game Jams</a> - find out about gamejams</p>
+        <p><a href="http://www.onegameamonth.com/">One Game A Month</a> - commit to making one creation each month</p>
+        <p><a href="http://boscaceoil.net/">Bosca Ceoil</a> - make music</p>
+        <p><a href="http://www.bfxr.net/">BFXR</a> - make sound effects</p>
+        <p><a href="https://freesound.org/">FreeSound</a> - royalty-free music</p>
+
+        <h3 class="blue">ARTICLES &amp; OTHER</h3>
+        <p><a href="http://www.gamesareforeveryone.com/">GamesAreForEveryone</a> - list of resources regarding all aspects of gamedev</p>
+        <p><a href="https://killscreen.com/">Kill Screen</a> - video game arts and culture publication</p>
+        <p><a href="http://www.telegraph.co.uk/gaming/what-to-play/personal-issues-inside-the-fascinating-world-of-interactive-biog/">Gaming to cope: how developers are tackling real life</a> - article on personal games creation</p>
+        <p>We'd love your suggestions to improve this list!</p>
+  </div>
+
+  <div class="maincontain align-left">
+        <h2 class="leftheader">Events around us</h2>
+        <p><a href="https://www.facebook.com/edinburghindies">Edinburgh Indies</a> - monthly meetup, every first Thursday</p>
+        <p><a href="https://www.facebook.com/GameDevEd/">Game Dev Edinburgh</a> - bimonthly meetup, every second Tuesday</p>
+        <p><a href="https://igdascotland.org/">IGDA Scotland</a> - talks, events &amp; resources all over Scotland</p>
+        <p><a href="http://edindi.es">EdIndies</a> - weekly co-working meetup in Summerhall</p>
+        <p><a href="https://www.eventbrite.co.uk/e/gamesareforeveryone-tickets-31598699561">GamesAreForEveryone</a> - drinks, music &amp; selection of interesting games</p>
+  </div>
+
+  <div class="maincontain align-center">
+    <h2 class="leftheader">The team</h2>
+  </div>
+
+  <div class="maincontain align-center final">
+        <p>GameDevSoc follows <a href="https://www.eusa.ed.ac.uk/eusapolicy/internal/safespaceupdate/">EUSA's Safe Space Policy.</a></p>
+        <br/>
+        <h3>SPONSORED BY:</h3>
+        <img src="JPM.png"/>
+  </div>
+
 </body>
 </html>
