@@ -5,11 +5,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/ >
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
   <style>
 
     html {
       background-color: #3B97D3;
-      font-family:"Letter Gothic Std", sans-serif;
+      font-family: 'Open Sans', sans-serif;
       font-weight: lighter;
     }
 
@@ -27,15 +28,16 @@
       margin: auto;
       margin-top: 50px;
       padding: 40px;
-      color: #163c52;
+      color: #17608a;
+      border-radius: 3px;
     }
 
     .align-center {
-        text-align: center;
+      text-align: center;
     }
 
     .align-left {
-        text-align: left;
+      text-align: left;
     }
 
     p {
@@ -43,19 +45,34 @@
     }
 
     .card {
+      border-radius: 3px;  
       background-color: #163c52;
       color: white;
       padding: 10px;
       margin: 20px;
+      -webkit-transition: background-color 500ms ease-out;
+      -moz-transition: background-color 500ms ease-out;
+      -o-transition: background-color 500ms ease-out;
+      transition: background-color 500ms ease-out;
+    }
+
+    .card:hover {
+      background-color: #052b42;
+      -webkit-transition: background-color 500ms ease-out;
+      -moz-transition: background-color 500ms ease-out;
+      -o-transition: background-color 500ms ease-out;
+      transition: background-color 500ms ease-out;
     }
 
     .press {
+      border-radius: 3px;
       margin: 20px;
-      padding: 20px;
+      padding: 15px;
       display: block;
       background: white;
       border: 4px solid #163c52;
-      font-size: 20px;
+      font-size: 22px;
+      color: #163c52;
       -webkit-transition: background-color 500ms ease-out;
       -moz-transition: background-color 500ms ease-out;
       -o-transition: background-color 500ms ease-out;
@@ -63,12 +80,12 @@
     }
 
     a {
-      text-decoration: none;
-      color: #163c52;
+      color: #007bc6;
     }
 
     .press:hover {
-      background-color: #3B97D3;
+      background-color: #163c52;
+      color: white;
       -webkit-transition: background-color 500ms ease-out;
       -moz-transition: background-color 500ms ease-out;
       -o-transition: background-color 500ms ease-out;
@@ -76,16 +93,36 @@
     }
 
     .leftheader {
-        font-size: 36px;
-        color: #3B97D3;
+      font-size: 36px;
+      color: #3B97D3;
     }
 
     img {
-        max-width: 500px;
+      max-width: 500px;
+      border-radius: 3px;
     }
 
     .final {
-        margin-bottom: 60px;
+      margin-bottom: 60px;
+    }
+
+    .highlight {
+      text-decoration: underline;
+    }
+
+    .desc {
+      color: #3b97d3;
+      margin-top: -20px;
+    }
+
+    .no-dec {
+      text-decoration: none;
+    }
+
+    @media (max-width: 600px) {
+      p {
+        font-size: 16px;
+      }
     }
 
   </style>
@@ -94,51 +131,54 @@
   <img src="logotext.png" alt="gamedevsoc logo" class="headerimg">
 
   <div class="maincontain align-center">
-    <h2>Edinburgh Uni's Game Development Society</h2>
+    <h2>EDINBURGH UNI'S GAME DEVELOPMENT SOCIETY</h2>
     <p>We want to create a welcoming environment for seasoned game developers and beginners alike. We host events that are part-talks part-socials, during which you can share your ideas in a stimulating environment.</p>
     <p>All our events are free, open to non-students and do not require membership, so do come along if you are curious!</p>
-    <div class="card">
-      <h3>Next event:</h3>
-      <p>This one</p>
-    </div>
+    <a href="https://www.eusa.ed.ac.uk/ents/event/9933/" class="no-dec">
+        <div class="card">
+          <h3>Next event:</h3>
+          <p class="highlight">Come make games with us and eat free food and stuff</p>
+          <p>Wednesday 13th September</p><p>13:00-16:00</p><p>Teviot Study</p>
+        </div>
+    </a>
   </div>
 
   <div class="maincontain align-center">
-    <a href="https://www.facebook.com/groups/gamedevsocedi/"><span class="press">Join our Facebook group</span></a>
-    <a href="http://space.us14.list-manage2.com/subscribe?u=fef88d16b9f97a5f9fd333b48&id=28e0e8416e"><span class="press">Sign up to our newsletter</span></a>
-    <a href="https://www.eusa.ed.ac.uk/societies/society/gamedevsoc/"><span class="press">Donate?????? EUSA???</span></a>
+    <a href="https://www.facebook.com/groups/gamedevsocedi/" class="no-dec"><span class="press">Join our Facebook group</span></a>
+    <a href="http://space.us14.list-manage2.com/subscribe?u=fef88d16b9f97a5f9fd333b48&id=28e0e8416e" class="no-dec"><span class="press">Sign up to our newsletter</span></a>
+    <a href="https://www.eusa.ed.ac.uk/societies/society/gamedevsoc/" class="no-dec"><span class="press">Support us - buy a membership!</span></a>
     <p>You can also email us at <a href="mailto:gamedevsoc@gmail.com">gamedevsoc@gmail.com</a>.</p>
   </div>
 
   <div class="maincontain align-center">
     <h2 class="leftheader">Our events</h2>
-    <h3>SOCIALS: MICROTALKS, WORKSHOPS &amp; SHOWCASE</h3>
-    <h3>MONTHLY ON SATURDAYS</h3>
+    <h2>SOCIALS: MICROTALKS, WORKSHOPS &amp; SHOWCASE</h2>
+    <h3 class="desc">MONTHLY ON SATURDAYS</h3>
     <p>Talk to people about games, come by if you are just curious, listen (or give!) short talks, learn about gamedev and play or receive feedback on your games. Non-members and non-students welcome!</p>
-    <h3>GAMEJAMS</h3>
-    <h3>ONE PER SEMESTER</h3>
+    <h2>GAMEJAMS</h2>
+    <h3 class="desc">ONE PER SEMESTER</h3>
     <p>Challenge yourself and make a game in a day or two! It's a great way to get started and improve your skills.</p>
   </div>
 
   <div class="maincontain align-center">
     <h2 class="leftheader">Past events</h2>
     <h3>You can find games people made at our gamejams on our <a class="blue" href="https://gamedevsoc.itch.io">itch.io page</a>!</h3>
-    <h3>JAM SANDWICH</h3>
-    <h3>25.02.17 - 25.02.17</h3>
+    <h2>JAM SANDWICH</h2>
+    <h3 class="desc">25.02.17 - 25.02.17</h3>
         <div class="embed-responsive embed-responsive-16by9">
             <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/?listType=playlist&list=PLhR_KR4_8GfchWqQSrWigR0qcdtWpy9H1"></iframe>
         </div>
-    <h3>CHILLJAM</h3>
-    <h3>12.11.16</h3>
+    <h2>CHILLJAM</h2>
+    <h3 class="desc">12.11.16</h3>
         <div class="embed-responsive embed-responsive-16by9">
             <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/WHHMHY8LX0Y"></iframe>
         </div>
   </div>
 
-  <div class="maincontain align-left">
+  <div class="maincontain align-center">
         <h2 class="leftheader">Resources for starting out</h2>
         <h3>TOOLS</h3>
-        <p><a href="http://twinery.org/">Twine</a> - easy-to-use tool for interactive fiction creation. Quick tutorial over <a href="http://www.auntiepixelante.com/twine/">here</a>!</p>
+        <p><a href="http://twinery.org/">Twine</a> - easy-to-use tool for interactive fiction creation (<a href="http://www.auntiepixelante.com/twine/">quick tutorial</a>)</p>
         <p><a href="https://www.scirra.com/construct2">Construct 2</a> - programming-free game creation (Windows). Intuitive and great for prototyping</p>
         <p><a href="http://www.yoyogames.com/gamemaker">GameMaker</a> - powerful, has its own built-in language. Exports to many platforms</p>
         <p><a href="http://www.sortingh.at/">sortingh.at</a> - not sure what tool to use?</p>
@@ -156,13 +196,15 @@
         <p>We'd love your suggestions to improve this list!</p>
   </div>
 
-  <div class="maincontain align-left">
+  <div class="maincontain align-center">
         <h2 class="leftheader">Events around us</h2>
         <p><a href="https://www.facebook.com/edinburghindies">Edinburgh Indies</a> - monthly meetup, every first Thursday</p>
         <p><a href="https://www.facebook.com/GameDevEd/">Game Dev Edinburgh</a> - bimonthly meetup, every second Tuesday</p>
         <p><a href="https://igdascotland.org/">IGDA Scotland</a> - talks, events &amp; resources all over Scotland</p>
         <p><a href="http://edindi.es">EdIndies</a> - weekly co-working meetup in Summerhall</p>
         <p><a href="https://www.eventbrite.co.uk/e/gamesareforeveryone-tickets-31598699561">GamesAreForEveryone</a> - drinks, music &amp; selection of interesting games</p>
+        <h2 class="leftheader">Related societies</h2>
+        <p>Make sure to check out <a href="https://www.eusa.ed.ac.uk/societies/society/compsoc/">CompSoc</a>, <a href="https://www.eusa.ed.ac.uk/societies/society/gamesoc/">GameSoc</a> and <a href="https://www.eusa.ed.ac.uk/societies/society/entrepreneurship/">EntSoc</a>!</p>
   </div>
 
   <div class="maincontain align-center">
@@ -179,7 +221,7 @@
         <p>GameDevSoc follows <a href="https://www.eusa.ed.ac.uk/eusapolicy/internal/safespaceupdate/">EUSA's Safe Space Policy.</a></p>
         <br/>
         <h3>SPONSORED BY:</h3>
-        <img src="JPM.png"/>
+        <img src="JPM.png" alt="J.P.Morgan"/>
   </div>
 
 </body>
